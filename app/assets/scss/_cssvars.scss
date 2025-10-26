@@ -1,0 +1,16 @@
+:root,
+[data-style-mode='light'],
+.light-mode {
+    --font-family: 'Open Sans', sans-serif;
+    --font-family-header: 'Oswald', sans-serif;
+    --font-size: 1rem;
+    --opacity-on-hover: 0.7;
+    --transition: all var(--p-transition-duration) ease-out;
+    --max-container-width: 1366px;
+    --background: var(--p-surface-0);
+}
+
+[data-style-mode='dark'],
+.dark-mode {
+    --background: var(--p-surface-950);
+}
