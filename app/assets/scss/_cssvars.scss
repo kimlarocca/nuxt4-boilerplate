@@ -8,13 +8,16 @@
     --transition: all var(--p-transition-duration) ease-out;
     --max-container-width: 1366px;
     --background: var(--p-surface-0);
-    --p-text-color: var(--p-black);
+    --p-text-color: var(--p-surface-950);
     --p-button-border-radius: 25px;
     --p-button-padding-x: 25px;
     --p-button-sm-padding-x: 25px;
+    // --p-primary-color: var(--p-cyan-800);
 }
 
 [data-style-mode='dark'],
 .dark-mode {
     --background: var(--p-surface-950);
+    --p-text-color: var(--p-surface-0);
+    // --p-primary-color: var(--p-cyan-500);
 }

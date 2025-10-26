@@ -1,4 +1,4 @@
-import Aura from '@primeuix/themes/aura'
+import Lara from '@primeuix/themes/lara'
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-10-26',
@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     options: {
       ripple: true,
       theme: {
-        preset: Aura,
+        preset: Lara,
         options: {
           prefix: 'p',
           darkModeSelector: '.dark-mode',
