@@ -8,6 +8,10 @@
     --transition: all var(--p-transition-duration) ease-out;
     --max-container-width: 1366px;
     --background: var(--p-surface-0);
+    --p-text-color: var(--p-black);
+    --p-button-border-radius: 25px;
+    --p-button-padding-x: 25px;
+    --p-button-sm-padding-x: 25px;
 }
 
 [data-style-mode='dark'],
