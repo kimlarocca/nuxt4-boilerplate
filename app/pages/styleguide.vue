@@ -72,15 +72,13 @@ const ingredient = ref("Cheese")
       <Button label="Example Button" class="mr-3" />
       <Button label="Outlined Button" class="mb-3" variant="outlined" />
     </div>
-    <div class="bg-surface-0 light-mode p-6">
-      <h1>Force Light Mode</h1>
+    <div class="highlight p-6">
+      <h1>Highlighted Section</h1>
       <p class="mb-3">
         This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Asperiores, esse eum ex explicabo facere maiores minus mollitia nulla qui saepe
         tempora veritatis. Dolore ducimus fuga provident sed temporibus. Ab, perspiciatis.
       </p>
-      <Button label="Example Button" class="mr-3" />
-      <Button label="Outlined Button" class="mb-3" variant="outlined" />
     </div>
     <Divider class="my-7" />
 
@@ -177,13 +175,13 @@ const ingredient = ref("Cheese")
       size="small"
       variant="outlined"
     />
-    <Tag value="Primary"></Tag>
-    <Tag severity="secondary" value="Secondary"></Tag>
-    <Tag severity="success" value="Success"></Tag>
-    <Tag severity="info" value="Info"></Tag>
-    <Tag severity="warn" value="Warn"></Tag>
-    <Tag severity="danger" value="Danger"></Tag>
-    <Tag severity="contrast" value="Contrast"></Tag>
+    <Tag class="mr-3" value="Primary"></Tag>
+    <Tag class="mr-3" severity="secondary" value="Secondary"></Tag>
+    <Tag class="mr-3" severity="success" value="Success"></Tag>
+    <Tag class="mr-3" severity="info" value="Info"></Tag>
+    <Tag class="mr-3" severity="warn" value="Warn"></Tag>
+    <Tag class="mr-3" severity="danger" value="Danger"></Tag>
+    <Tag class="mr-3" severity="contrast" value="Contrast"></Tag>
     <divider class="my-7" />
     <ProgressSpinner class="mb-3" />
     <Card style="width: 400px" class="mb-3">

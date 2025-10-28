@@ -11,11 +11,9 @@ body {
     margin: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background: var(--background);
     font-family: var(--font-family);
     transition: var(--transition);
     min-height: 100vh;
-    color: var(--p-text-color);
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -47,6 +45,11 @@ a {
     margin: auto;
 }
 
+.highlight {
+    background-color: var(--p-highlight-background);
+    color: var(--p-highlight-text-color);
+}
+
 .cursor-pointer,
 .clickable {
     cursor: pointer;
@@ -68,10 +71,14 @@ a {
 [data-js-focus-visible] .button:focus:not([data-focus-visible-added]) {
     outline: none;
 }
-
 .unselectable {
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE 10+ */
     user-select: none; /* Standard syntax */
+}
+
+// primevue overrides
+.p-button-label {
+    text-transform: uppercase !important;
 }
