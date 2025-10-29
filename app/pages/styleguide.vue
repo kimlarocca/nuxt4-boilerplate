@@ -42,10 +42,10 @@ const ingredient = ref("Cheese")
     <i v-if="isDarkMode" @click="setLightMode" class="pi pi-sun clickable" />
     <i v-else @click="setDarkMode" class="pi pi-moon clickable mr-2" />
     <Divider class="my-7" />
-    <h1 class="mb-3">H1 Lorem Ipsum Dolor Sit Amet</h1>
-    <h2 class="mb-3">H2 Lorem Ipsum Dolor Sit Amet</h2>
-    <h3 class="mb-3">H3 Lorem Ipsum Dolor Sit Amet, consectetur adipisicing elit.</h3>
-    <h4 class="mb-3">H4 Lorem Ipsum Dolor Sit Amet, consectetur adipisicing elit.</h4>
+    <h1 class="mb-5">H3 Lorem Ipsum Dolor Sit Amet, consectetur adipisicing elit.</h1>
+    <h2 class="mb-5">H3 Lorem Ipsum Dolor Sit Amet, consectetur adipisicing elit.</h2>
+    <h3 class="mb-5">H3 Lorem Ipsum Dolor Sit Amet, consectetur adipisicing elit.</h3>
+    <h4 class="mb-5">H4 Lorem Ipsum Dolor Sit Amet, consectetur adipisicing elit.</h4>
     <p class="mb-3">
       This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       Asperiores, esse eum ex explicabo facere maiores minus mollitia nulla qui saepe
@@ -62,19 +62,18 @@ const ingredient = ref("Cheese")
       Here is some <strong>bold text</strong> and some <em>italic text</em>.
     </p>
     <p class="mb-3 small">Here is a paragraph with small text.</p>
-    <div class="bg-surface-950 dark-mode p-6 mb-8">
-      <h1>Force Dark Mode</h1>
+    <div class="contrast p-6 mb-8">
+      <h1 class="mb-3">Contrast Section</h1>
       <p class="mb-3">
         This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Asperiores, esse eum ex explicabo facere maiores minus mollitia nulla qui saepe
         tempora veritatis. Dolore ducimus fuga provident sed temporibus. Ab, perspiciatis.
       </p>
-      <Button label="Example Button" class="mr-3" />
-      <Button label="Outlined Button" class="mb-3" variant="outlined" />
+      <Button label="Example Button" />
     </div>
     <div class="highlight p-6">
-      <h1>Highlighted Section</h1>
-      <p class="mb-3">
+      <h1 class="mb-3">Highlighted Section</h1>
+      <p>
         This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Asperiores, esse eum ex explicabo facere maiores minus mollitia nulla qui saepe
         tempora veritatis. Dolore ducimus fuga provident sed temporibus. Ab, perspiciatis.

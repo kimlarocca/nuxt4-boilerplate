@@ -19,6 +19,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-variant-numeric: lining-nums;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--p-content-background) !important;
 }
 
 img {
@@ -45,9 +46,20 @@ a {
     margin: auto;
 }
 
+.contrast,
+.contrast h1,
+.contrast h2,
+.contrast h3,
+.contrast h4,
+.contrast h5,
+.contrast h6,
+.contrast p {
+    background: var(--p-text-color);
+    color: var(--p-primary-inverse-color);
+}
+
 .highlight {
     background-color: var(--p-highlight-background);
-    color: var(--p-highlight-text-color);
 }
 
 .cursor-pointer,

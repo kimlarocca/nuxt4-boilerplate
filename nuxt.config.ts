@@ -3,7 +3,6 @@
 
 import { definePreset } from '@primeuix/themes'
 import Aura from '@primeuix/themes/aura'
-import { root } from 'postcss'
 
 const MyPreset = definePreset(Aura, {
   semantic: {
@@ -39,7 +38,10 @@ const MyPreset = definePreset(Aura, {
     colorScheme: {
       light: {
         text: {
-          color: '{surface.950}',
+          color: "#000000",
+        },
+        content: {
+          background: '#ffffff', // light mode background color
         },
         primary: {
           color: '{sky.700}',
@@ -48,25 +50,25 @@ const MyPreset = definePreset(Aura, {
           activeColor: '{sky.500}'
         },
         highlight: {
-          background: '{sky.100}',
-        }
+          background: '{sky.50}',
+        },
       },
       dark: {
         text: {
           color: '{surface.0}',
         },
+        content: {
+          background: '#000000', // dark mode background color
+        },
         primary: {
           color: '{sky.500}',
-          inverseColor: '{surface.950}',
+          inverseColor: '#000000',
           hoverColor: '{sky.300}',
           activeColor: '{sky.300}'
         },
         highlight: {
-          background: 'rgba(250, 250, 250, .16)',
-          focusBackground: 'rgba(250, 250, 250, .24)',
-          color: 'rgba(255,255,255,.87)',
-          focusColor: 'rgba(255,255,255,.87)'
-        }
+          background: '{surface.950}',
+        },
       }
     },
   },

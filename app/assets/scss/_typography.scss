@@ -21,7 +21,7 @@
   p {
     font-size: 16px;
     line-height: 20px;
-    @screen lg {
+    @screen md {
       font-size: 18px;
       line-height: 24px;
     }
@@ -30,49 +30,57 @@
   h1,
   .like-h1 {
     font-family: var(--font-family-header);
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     text-transform: uppercase;
-    @screen lg {
+    line-height: 50px;
+    @screen md {
       font-size: 60px;
+      line-height: 60px;
     }
   }
 
   h2,
   .like-h2 {
     font-family: var(--font-family-header);
-    font-size: 40px;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 600;
     text-transform: uppercase;
-    @screen lg {
+    @screen md {
       font-size: 40px;
+      line-height: 40px;
     }
   }
 
   h3,
   .like-h3 {
     font-family: var(--font-family-header);
-    font-size: 40px;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 400;
-    @screen lg {
+    @screen md {
       font-size: 40px;
+      line-height: 40px;
     }
   }
 
   h4,
   .like-h4 {
     font-family: var(--font-family-header);
-    font-size: 32px;
+    font-size: 25px;
+    line-height: 25px;
     font-weight: 400;
-    @screen lg {
+    @screen md {
       font-size: 32px;
+      line-height: 32px;
     }
   }
 
   label,
   .small {
     font-size: 14px;
-    @screen lg {
+    @screen md {
       font-size: 14px;
     }
   }
