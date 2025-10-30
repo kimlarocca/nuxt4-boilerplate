@@ -44,9 +44,9 @@ const MyPreset = definePreset(Aura, {
           background: '#ffffff', // light mode background color
         },
         primary: {
-          color: '{sky.700}',
+          color: '{sky.800}',
           inverseColor: '{surface.0}',
-          hoverColor: '{sky.500}',
+          hoverColor: '{sky.700}',
           activeColor: '{sky.500}'
         },
         highlight: {
@@ -70,6 +70,20 @@ const MyPreset = definePreset(Aura, {
           background: '{surface.950}',
         },
       }
+    },
+  },
+  button: {
+    colorScheme: {
+      light: {
+        outlined: {
+          primary: {
+            hoverBackground: '{red.50}',
+            activeBackground: '{red.100}',
+            borderColor: '{red.200}',
+            color: '{red.500}'
+          },
+        },
+      },
     },
   },
   components: {
@@ -109,5 +123,38 @@ export default defineNuxtConfig({
         }
       }
     },
+  },
+
+  app: {
+    pageTransition: {
+      name: "page",
+      mode: "out-in",
+    },
+    head: {
+      title: 'Nuxt 4 Boilerplate', // default fallback title
+      htmlAttrs: {
+        lang: 'en',
+      },
+      meta: [
+        { name: 'msapplication-TileColor', content: '#0a84ff' },
+        { name: 'theme-color', content: '#0a84ff' }
+      ],
+      link: [
+        {
+          rel: 'apple-touch-icon',
+          sizes: '180x180',
+          href: '/apple-touch-icon.png'
+        },
+        { rel: 'manifest', href: '/site.webmanifest' },
+        { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#ff3904' },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.googleapis.com'
+        }
+      ],
+      // script: [
+      //   { src: 'https://www.googletagmanager.com/gtag/js?id=G-7GDC05EZKE' }
+      // ]
+    }
   },
 })
