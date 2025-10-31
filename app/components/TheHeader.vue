@@ -1,8 +1,8 @@
 <script setup>
 const { setDarkMode, setLightMode, isDarkMode } = useDarkMode()
 const navigationItems = [
-  { label: "Hash Link", href: "/", hash: "#issues" },
-  { label: "Contact Us", href: "/contact", hash: "" },
+  { label: "Hash Link", href: "/", hash: "#content" },
+  { label: "Styleguide", href: "/styleguide", hash: "" },
 ]
 const visible = ref(false)
 </script>
@@ -22,7 +22,7 @@ const visible = ref(false)
         <i v-else @click="setDarkMode" class="pi pi-moon text-lg clickable mr-3" />
         <i
           v-if="navigationItems"
-          class="pi pi-bars text-2xl"
+          class="pi pi-bars text-2xl clickable"
           @click="visible = !visible"
           aria-label="Toggle navigation menu"
         />
@@ -45,3 +45,20 @@ const visible = ref(false)
     </Drawer>
   </div>
 </template>
+
+<style lang="scss">
+.p-drawer-header button {
+  color: var(--p-button-primary-color) !important;
+  background: var(--p-button-primary-background) !important;
+  border: none !important;
+  &:hover {
+    background: var(--p-button-primary-hover-background) !important;
+    color: var(--p-button-primary-hover-color) !important;
+  }
+  &:focus,
+  &:focus-visible {
+    outline-color: transparent !important;
+    box-shadow: none !important;
+  }
+}
+</style>
