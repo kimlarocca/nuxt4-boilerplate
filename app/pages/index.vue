@@ -9,9 +9,6 @@
       <NuxtLink to="/" class="mr-3">
         <Button label="Call To Action" />
       </NuxtLink>
-      <NuxtLink to="/">
-        <Button label="Outlined Button" variant="outlined" />
-      </NuxtLink>
     </div>
   </div>
 </template>
