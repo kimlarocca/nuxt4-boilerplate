@@ -1,3 +1,24 @@
+<script setup>
+const supabase = useSupabaseClient()
+const loading = ref(true)
+const supabaseData = ref(null)
+
+const getData = async () => {
+  const { data, error } = await supabase.from("lorem-forum").select(`*`).order("name")
+  if (error) {
+    console.error(error)
+  } else {
+    console.log(data)
+    supabaseData.value = data
+  }
+  loading.value = false
+}
+
+onMounted(async () => {
+  getData()
+})
+</script>
+
 <template>
   <div>
     <section class="hero flex flex-col items-center justify-center mb-12">
@@ -12,10 +33,11 @@
         </NuxtLink>
       </div>
     </section>
-    <section class="container p-4">
+
+    <ProgressSpinner v-if="loading" />
+    <section v-else class="container p-4">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.
+        {{ supabaseData }}
       </p>
     </section>
   </div>
