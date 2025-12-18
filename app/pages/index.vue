@@ -8,7 +8,6 @@ const getData = async () => {
   if (error) {
     console.error(error)
   } else {
-    console.log(data)
     supabaseData.value = data
   }
   loading.value = false
@@ -34,9 +33,9 @@ onMounted(async () => {
       </div>
     </section>
 
-    <ProgressSpinner v-if="loading" />
-    <section v-else class="container p-4">
-      <p>
+    <section class="container p-4">
+      <ProgressSpinner v-if="loading" />
+      <p v-else>
         {{ supabaseData }}
       </p>
     </section>
